@@ -20,4 +20,9 @@ class Project extends Model
         'status',
         'repository_url',
     ];
+
+    public function type()
+    {
+        return $this->belongsTo(Type::class);
+    }
 }
