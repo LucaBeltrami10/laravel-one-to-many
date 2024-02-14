@@ -32,7 +32,7 @@
             <td>{{ $project->type->type }}</td>
             <td>{{ $project->language_used }}</td>
             <td>{{ $project->framework_used }}</td>
-            <td>{{ $project->status = 1 ? 'Completato' : 'In corso' }}</td>
+            <td>{{ $project->status ? 'Completato' : 'In corso' }}</td>
             <td>{{ $project->repository_url }}</td>
             <td>{{ $project->description }}</td>
             <td>
