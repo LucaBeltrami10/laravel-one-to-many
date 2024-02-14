@@ -15,6 +15,7 @@ class ProjectSeeder extends Seeder
     {
         $projects = [
             [
+                'type_id' => '1',
                 'project_name' => 'htmlcss-hello',
                 'description' => 'introduzione HTML',
                 'language_used' => 'HTML',
@@ -23,6 +24,7 @@ class ProjectSeeder extends Seeder
                 'repository_url' => 'https://github.com/LucaBeltrami10/htmlcss-hello.git',
             ],
             [
+                'type_id' => '2',
                 'project_name' => 'html-london-trip ',
                 'description' => 'introduzione HTML',
                 'language_used' => 'HTML',
@@ -31,6 +33,7 @@ class ProjectSeeder extends Seeder
                 'repository_url' => 'https://github.com/LucaBeltrami10/html-london-trip.git',
             ],
             [
+                'type_id' => '3',
                 'project_name' => 'html-css-booleaner',
                 'description' => 'introduzione HTML',
                 'language_used' => 'HTML, CSS',
@@ -44,6 +47,7 @@ class ProjectSeeder extends Seeder
             $newProject = new Project();
 
             $newProject->project_name = $value['project_name'];
+            $newProject->type_id = $value['type_id'];
             $newProject->description = $value['description'];
             $newProject->language_used = $value['language_used'];
             $newProject->framework_used = $value['framework_used'];
