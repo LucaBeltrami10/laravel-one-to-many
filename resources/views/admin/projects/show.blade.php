@@ -40,7 +40,7 @@
           </tr>
           <tr>
             <th scope="row">Status del lavoro</th>
-            <td>{{ $project->status }}</td>
+            <td>{{ $project->status = 1 ? 'Completato' : 'In corso' }}</td>
           </tr>
           <tr>
             <th scope="row">Link a repository</th>
