@@ -14,6 +14,15 @@
           <input type="text" class="form-control" id="project_name" name="project_name" value="{{ old('project_name', $project->project_name) }}">
         </div>
         <div class="mb-3">
+            <label for="type_id" class="form-label">Tecnologia</label>
+            <select class="form-select" aria-label="Default select example" id="type_id" name="type_id">
+                <option selected>Tecnologia utilizzata</option>
+                    @foreach ($types as $type )
+                    <option {{ $type->id == $project->type_id ? 'selected' : '' }} value="{{ $type->id }}">{{ $type->type }}</option>
+                    @endforeach
+            </select>
+        </div>
+        <div class="mb-3">
             <label for="description" class="form-label">Descrizione progetto</label>
             <input type="text" class="form-control" id="description" name="description" value="{{ old('project_name', $project->description) }}">
         </div>
