@@ -27,6 +27,10 @@
             <td>{{ $project->project_name }}</td>
           </tr>
           <tr>
+            <th scope="row">Tipologia</th>
+            <td>{{ $project->type->type }}</td>
+          </tr>
+          <tr>
             <th scope="row">Linguaggi utilizzati</th>
             <td>{{ $project->language_used }}</td>
           </tr>
