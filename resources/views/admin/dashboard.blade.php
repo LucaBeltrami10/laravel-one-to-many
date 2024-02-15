@@ -9,6 +9,9 @@
     <a href="{{ route('admin.projects.index') }}">
         <button type="button" class="btn btn-dark">Tabella Post</button>
     </a>
+    <a href="{{ route('admin.projects.deleted') }}">
+        <button type="button" class="btn btn-dark">Eliminati di Recente</button>
+    </a>
     
 </div>
 

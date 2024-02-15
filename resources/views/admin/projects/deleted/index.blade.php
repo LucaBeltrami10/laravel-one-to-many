@@ -38,8 +38,8 @@
               <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $project->id }}">
                 Cancella
               </button>
-              <a href="{{ route('admin.projects.edit', $project->id) }}">
-                <button type="button" class="btn btn-success">Modifica</button>
+              <a href="">
+                <button type="button" class="btn btn-warning">Ripristina</button>
               </a>
 
               <!-- Modal -->

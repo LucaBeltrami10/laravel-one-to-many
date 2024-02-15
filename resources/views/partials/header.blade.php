@@ -29,6 +29,11 @@
                         </li>
                     @endif
                 @else
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ $redirectTo = '/admin/dashboard' }}">
+                        Dashboard
+                    </a>
+                </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('admin.projects.index') }}">
                             Projects
